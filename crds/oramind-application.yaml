@@ -1,0 +1,10 @@
+apiVersion: oramind.com/v1
+kind: Application
+metadata:
+  name: oramindsampleapp
+spec:
+  application-name: Example Application
+  description: This is an example application
+  image: nginx:latest
+  secret-name: oramind-application-secret
+  secret-env-var: APPLICATION_SECRET
